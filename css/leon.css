@@ -69,7 +69,7 @@ body {
   }
 }
 /* End components  */
-/* Start up  */
+/* Start up button */
 .up {
   width: fit-content;
   height: fit-content;
@@ -92,7 +92,7 @@ body {
 .up a:hover {
   color: #0a867a;
 }
-/* End up  */
+/* End up button */
 /* Start header  */
 .header {
   padding: 20px;
@@ -139,15 +139,15 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color:  var(--section-background);
+  background: white;
   position: absolute;
   overflow: hidden;
   max-height: 0;
   right: 0;
   min-width: 200px;
-  top: calc(100% + 20px);
+  top: calc(100% + 23.5px);
   z-index: 3;
-  box-shadow: 0 1px 3.5px -2px black;
+  box-shadow: 0 3px 3.5px -3px var(--scenodary-color);
   border-radius: 0 0 8px 8px;
   -webkit-border-radius: 0 0 8px 8px;
   -moz-border-radius: 0 0 8px 8px;
@@ -163,7 +163,7 @@ body {
   max-height: 250px;
 }
 .header .links li a {
-  padding: 20px;
+  padding: 17px;
   display: block;
   text-decoration: none;
   color: #333;
@@ -175,8 +175,17 @@ body {
 .header .links ul li a:hover {
   padding-left: 25px;
 }
+.header .links li:first-child a {
+  box-shadow: 0px 2px 12px -10px var(--scenodary-color)inset; 
+}
 .header .links li:not(:last-child) a {
-  border-bottom: 1px solid #333; 
+  border-bottom: 1px solid var(--scenodary-color); 
+}
+.header .links li:not(:last-child) a:hover {
+  border-bottom: 1px solid var(--mainColor);
+}
+.header .links li a:hover {
+  color: var(--mainColor);
 }
 /* End header  */
 /* Start Landing Section  */
